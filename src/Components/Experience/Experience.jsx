@@ -1,10 +1,7 @@
 import React from "react";
-import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact } from "react-icons/fa";
-import { SiRedis } from "react-icons/si";
-import { FaGoogle } from "react-icons/fa";
-import { SiMongodb } from "react-icons/si";
-import { RiNetflixFill } from "react-icons/ri";
-import { FaAmazon } from "react-icons/fa";
+import { FaBootstrap, FaCss3, FaFigma, FaGithub, FaHtml5, FaJira, FaJs, FaReact } from "react-icons/fa";
+
+
 const Experience = () => {
   return (
     <div id="Experience" className="p-10 md:p-24">
@@ -24,52 +21,70 @@ const Experience = () => {
             <FaJs color="#F7DF1E" size={50} />
           </span>
           <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
+            <FaBootstrap color="#F7DF1E" size={50} />
+          </span>
+          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
             <FaFigma color="#F24E1E" size={50} />
           </span>
           <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <SiMongodb color="#47A248" size={50} />
+            <FaGithub color="#F24E1E" size={50} />
           </span>
           <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <SiRedis color="#FF4438" size={50} />
+            <FaJira color="#F24E1E" size={50} />
           </span>
+         
+          
         </div>
         <div>
           <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg p-4 items-center">
-            <FaGoogle color="#4285F4" size={50} />
+            
             <span className="text-white">
-              <h2 className="leading-tight">Software Engineer , Google</h2>
+              <h2 className="leading-tight">Software Developer , Korn Ferry</h2>
               <p className="text-sm leading-tight font-thin">
-                Sept 2023 - Present
+                June 2023 - October 2023
               </p>
               <ul className="text-sm p-2">
-                <li>- Work as software developer</li>
-                <li>- Senior SDE-developer</li>
+                <li>- Led development of KF Assess 3.0, collaborating with the design team and implementing Jest for testing.</li>
+                <li>- Deployed with Azure App Service, and used Node.js for backend integration.</li>
               </ul>
             </span>
           </div>
           <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center">
-            <RiNetflixFill color="#E50914" size={50} />
+            
             <span className="text-white">
-              <h2 className="leading-tight">Software Engineer, Google</h2>
+              <h2 className="leading-tight">System Engineer II, Tata Consultancy Services</h2>
               <p className="text-sm leading-tight font-thin">
-                Sept 2023 - Present
+                Aug 2022- November 2022
               </p>
               <ul className="text-sm p-2">
-                <li>- Work as software developer.</li>
-                <li>- Senior SDE-developer</li>
+                <li>- Developed the Metlife-RIS Data Store, integrating React with Java and Springboot.</li>
+                <li>- Utilized Material UI, Redux, and Jest for building scalable and maintainable applications.</li>
               </ul>
             </span>
           </div>
           <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center">
-            <FaAmazon color="#FF9900" size={50} />
+           
             <span className="text-white">
-              <h2 className="leading-tight">Software Engineer, Google</h2>
+              <h2 className="leading-tight">UI Developer, Artech Infosystems Pvt.Ltd.</h2>
               <p className="text-sm leading-tight font-thin">
-                Sept 2023 - Present
+                November 2021 - June 2022
               </p>
               <ul className="text-sm p-2">
-                <li>- Work as software developer.</li>
-                <li>- Senior SDE-developer</li>
+                <li>- Developed the UI for NAB BPE Mini app, integrated with Azure Cosmos DB and used GraphQL for efficient data fetching.</li>
+                <li>- Focused on creating seamless UI/UX experiences, collaborating closely with cross-functional teams.</li>
+              </ul>
+            </span>
+          </div>
+          <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center">
+            
+            <span className="text-white">
+              <h2 className="leading-tight">Frontend Developer, Quantum Infocom</h2>
+              <p className="text-sm leading-tight font-thin">
+                July 2018- August 2021
+              </p>
+              <ul className="text-sm p-2">
+                <li>- Built the Zing Up Life platform using Node.js, Express, and MongoDB, focusing on performance optimization and user experience.</li>
+                <li>- Integrated frontend with backend systems, ensuring smooth operation and user interface responsiveness.</li>
               </ul>
             </span>
           </div>
