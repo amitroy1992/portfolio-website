@@ -6,25 +6,25 @@ const dashboards = [
     title: "Roy's Kitchen Power BI Dashboard",
     description:
       "Power BI dashboard analyzing restaurant sales including revenue trends and top selling items.",
-    image: "/portfolio-website/dashboards/roys-kitchen-dashboard.png",
+    image: "/dashboards/roys-kitchen-dashboard.png",
   },
   {
     title: "Retail Sales Power BI Dashboard",
     description:
       "Interactive Power BI dashboard analyzing retail sales across products and customer segments.",
-    image: "/portfolio-website/dashboards/retail-dashboard.png",
+    image: "/dashboards/retail-dashboard.png",
   },
   {
     title: "Tata Data Visualization Dashboard",
     description:
       "Tableau dashboard analyzing retail sales data created during Tata simulation.",
-    image: "/portfolio-website/dashboards/tableau-dashboard.png",
+    image: "/dashboards/tableau-dashboard.png",
   },
   {
     title: "BCG Marketing Campaign Analysis",
     description:
       "Marketing campaign performance analysis dashboard built during BCG simulation.",
-    image: "/portfolio-website/dashboards/bcg-dashboard.png",
+    image: "/dashboards/bcg-dashboard.png",
   },
 ];
 

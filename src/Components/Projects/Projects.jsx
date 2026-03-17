@@ -12,35 +12,35 @@ const Projects = () => {
       description:
         "Power BI dashboard analyzing restaurant sales including revenue trends, customer orders, and top selling items.",
       github: "https://github.com/amitroy1992/roys-kitchen-powerbi-dashboard",
-      image: `${import.meta.env.BASE_URL}dashboards/roys-kitchen-dashboard.png`,
+      image: "dashboards/roys-kitchen-dashboard.png",
     },
     {
       title: "Retail Sales Power BI Dashboard",
       description:
         "Interactive Power BI dashboard analyzing retail sales performance across countries, products, and customer segments.",
       github: "https://github.com/amitroy1992/powerbi-retail-sales-dashboard",
-      image: `${import.meta.env.BASE_URL}dashboards/retail-dashboard.png`,
+      image: "dashboards/retail-dashboard.png",
     },
     {
       title: "Tata Data Visualization Dashboard",
       description:
         "Tableau dashboard analyzing retail sales data created as part of Tata Data Visualization simulation.",
       github: "https://github.com/amitroy1992/tata-data-visualization-dashboard",
-      image: `${import.meta.env.BASE_URL}dashboards/tableau-dashboard.png`,
+      image:  "dashboards/tableau-dashboard.png",
     },
     {
       title: "BCG Marketing Campaign Analysis",
       description:
         "Marketing campaign performance analysis project completed during BCG Forage simulation with data-driven insights.",
       github: "https://github.com/amitroy1992/bcg-data-for-decision-makers",
-      image: `${import.meta.env.BASE_URL}dashboards/bcg-dashboard.png`,
+      image: "dashboards/bcg-dashboard.png",
     },
     {
-      title: "React Portfolio Website",
+      title: "Data Analyst Portfolio Website",
       description:
         "Personal portfolio website built using React.js and Tailwind CSS to showcase projects, experience, and skills.",
       github: "https://github.com/amitroy1992/portfolio-website",
-      image: `${import.meta.env.BASE_URL}dashboards/Data-Analyst-Isometric-Illustration.jpg`, // placeholder (change later if needed)
+      image: "dashboards/Data-Analyst-Isometric-Illustration.jpg",
     },
   ];
 

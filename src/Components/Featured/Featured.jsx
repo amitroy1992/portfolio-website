@@ -18,7 +18,7 @@ const Featured = () => {
 
         {/* IMAGE */}
         <img
-          src="/portfolio-website/dashboards/roys-kitchen-dashboard.png"
+          src="/dashboards/roys-kitchen-dashboard.png"
           alt="Roy's Kitchen Dashboard"
           className="rounded-xl w-full md:w-[40%] max-h-[280px] object-cover 
 shadow-md hover:scale-105 transition duration-300"
