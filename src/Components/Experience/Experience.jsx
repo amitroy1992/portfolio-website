@@ -1,94 +1,87 @@
 import React from "react";
-import { FaBootstrap, FaCss3, FaFigma, FaGithub, FaHtml5, FaJira, FaJs, FaReact } from "react-icons/fa";
-
 
 const Experience = () => {
   return (
-    <div id="Experience" className="p-10 md:p-24">
-      <h1 className="text-2xl md:text-4xl text-white font-bold">Experience</h1>
-      <div className="flex flex-wrap items-center justify-around">
-        <div className="flex flex-wrap md:w-2/5 gap-8 md:p-12 py-10">
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <FaHtml5 color="#E34F26" size={50} />
-          </span>
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <FaCss3 color="#1572B6" size={50} />
-          </span>
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <FaReact color="#61DAFB" size={50} />
-          </span>
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <FaJs color="#F7DF1E" size={50} />
-          </span>
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <FaBootstrap color="#F7DF1E" size={50} />
-          </span>
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <FaFigma color="#F24E1E" size={50} />
-          </span>
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <FaGithub color="#F24E1E" size={50} />
-          </span>
-          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <FaJira color="#F24E1E" size={50} />
-          </span>
-         
-          
+    <div
+      id="Experience"
+      className="bg-[#0f172a] text-white py-16 px-6 md:px-20"
+    >
+      <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
+        Experience
+      </h2>
+
+      <div className="space-y-8 max-w-5xl mx-auto">
+
+          {/* Business */}
+        <div className="bg-[#1e2331] p-6 rounded-2xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(59,130,246,0.4)]">
+          <h3 className="text-xl font-bold text-blue-400">
+            Business Operations Analyst – Roy’s Kitchen
+          </h3>
+          <p className="text-gray-400 text-sm mb-3">2024 – Present</p>
+          <ul className="list-disc ml-5 text-gray-300 space-y-2">
+            <li>Analyzed sales and customer data to improve revenue</li>
+            <li>Optimized pricing and product strategy</li>
+          </ul>
         </div>
-        <div>
-          <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg p-4 items-center">
-            
-            <span className="text-white">
-              <h2 className="leading-tight">Software Developer , Korn Ferry</h2>
-              <p className="text-sm leading-tight font-thin">
-                June 2023 - October 2023
-              </p>
-              <ul className="text-sm p-2">
-                <li>- Led development of KF Assess 3.0, collaborating with the design team and implementing Jest for testing.</li>
-                <li>- Deployed with Azure App Service, and used Node.js for backend integration.</li>
-              </ul>
-            </span>
-          </div>
-          <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center">
-            
-            <span className="text-white">
-              <h2 className="leading-tight">System Engineer II, Tata Consultancy Services</h2>
-              <p className="text-sm leading-tight font-thin">
-                Aug 2022- November 2022
-              </p>
-              <ul className="text-sm p-2">
-                <li>- Developed the Metlife-RIS Data Store, integrating React with Java and Springboot.</li>
-                <li>- Utilized Material UI, Redux, and Jest for building scalable and maintainable applications.</li>
-              </ul>
-            </span>
-          </div>
-          <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center">
-           
-            <span className="text-white">
-              <h2 className="leading-tight">UI Developer, Artech Infosystems Pvt.Ltd.</h2>
-              <p className="text-sm leading-tight font-thin">
-                November 2021 - June 2022
-              </p>
-              <ul className="text-sm p-2">
-                <li>- Developed the UI for NAB BPE Mini app, integrated with Azure Cosmos DB and used GraphQL for efficient data fetching.</li>
-                <li>- Focused on creating seamless UI/UX experiences, collaborating closely with cross-functional teams.</li>
-              </ul>
-            </span>
-          </div>
-          <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center">
-            
-            <span className="text-white">
-              <h2 className="leading-tight">Frontend Developer, Quantum Infocom</h2>
-              <p className="text-sm leading-tight font-thin">
-                July 2018- August 2021
-              </p>
-              <ul className="text-sm p-2">
-                <li>- Built the Zing Up Life platform using Node.js, Express, and MongoDB, focusing on performance optimization and user experience.</li>
-                <li>- Integrated frontend with backend systems, ensuring smooth operation and user interface responsiveness.</li>
-              </ul>
-            </span>
-          </div>
+
+        {/* Korn Ferry */}
+        <div className="bg-[#1e2331] p-6 rounded-2xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(59,130,246,0.4)]">
+          <h3 className="text-xl font-bold text-blue-400">Software Developer – Korn Ferry</h3>
+          <p className="text-gray-400 text-sm mb-3">2023</p>
+          <ul className="list-disc ml-5 text-gray-300 space-y-2">
+            <li>Worked with enterprise data systems and optimized performance</li>
+            <li>Integrated APIs and handled large datasets</li>
+          </ul>
         </div>
+
+        {/* TCS */}
+        <div className="bg-[#1e2331] p-6 rounded-2xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(59,130,246,0.4)]">
+          <h3 className="text-xl font-bold text-blue-400">System Engineer – TCS</h3>
+          <p className="text-gray-400 text-sm mb-3">2022</p>
+          <ul className="list-disc ml-5 text-gray-300 space-y-2">
+            <li>Worked with SQL and backend data systems</li>
+            <li>Handled data processing and integration</li>
+          </ul>
+        </div>
+
+        {/* DXC */}
+        <div className="bg-[#1e2331] p-6 rounded-2xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(59,130,246,0.4)]">
+          <h3 className="text-xl font-bold text-blue-400">
+            UI Developer – DXC (Payroll: Artech)
+          </h3>
+          <p className="text-gray-400 text-sm mb-3">2021 – 2022</p>
+          <ul className="list-disc ml-5 text-gray-300 space-y-2">
+            <li>Built React-based applications with data-driven UI</li>
+            <li>Improved UI performance and responsiveness</li>
+          </ul>
+        </div>
+
+        {/* Quantum */}
+        <div className="bg-[#1e2331] p-6 rounded-2xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(59,130,246,0.4)]">
+          <h3 className="text-xl font-bold text-blue-400">
+            Frontend Developer – Quantum Infocom
+          </h3>
+          <p className="text-gray-400 text-sm mb-3">2018 – 2021</p>
+          <ul className="list-disc ml-5 text-gray-300 space-y-2">
+            <li>Developed data-driven web applications</li>
+            <li>Integrated backend APIs and improved performance</li>
+          </ul>
+        </div>
+
+      
+
+        {/* Internships */}
+        <div className="bg-[#1e2331] p-6 rounded-2xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(59,130,246,0.4)]">
+          <h3 className="text-xl font-bold text-blue-400">
+            Virtual Internships – Deloitte, Tata, BCG
+          </h3>
+          <ul className="list-disc ml-5 text-gray-300 space-y-2 mt-3">
+            <li>Deloitte – Data Analysis (Excel)</li>
+            <li>Tata – Data Visualization (Tableau)</li>
+            <li>BCG – Campaign Data Analysis</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   );
