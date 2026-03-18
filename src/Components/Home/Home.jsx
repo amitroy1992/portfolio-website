@@ -32,47 +32,43 @@ const Home = () => {
   Helping businesses make data-driven decisions through dashboards, analytics, and insights.
 </p>
 
-        <div className="mt-6 flex gap-4 justify-center md:justify-start">
+        <div className="flex flex-col sm:flex-row gap-4 mt-6">
 
-    
- <button
-  onClick={downloadResume}
-  className="relative text-white py-2 px-5 text-sm md:text-lg font-semibold rounded-3xl 
-  bg-gradient-to-r from-blue-500 to-indigo-600 
-  overflow-hidden 
-  transition-all duration-300 
-  hover:scale-105 hover:shadow-[0_0_25px_rgba(59,130,246,0.6)]"
->
-  <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-indigo-500 opacity-0 hover:opacity-20 blur-xl transition-all duration-300"></span>
-  <span className="relative z-10">View Resume</span>
-</button>
+  <button
+    onClick={downloadResume}
+    className="w-[200px] text-center whitespace-nowrap 
+text-white py-3 text-sm md:text-lg font-semibold rounded-full 
+bg-gradient-to-r from-blue-500 to-indigo-500 
+transition-all duration-300 
+hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.8)]"
+  >
+    Download Resume
+  </button>
 
-<a
-  href="#Projects"
-  className="ml-4 relative text-white py-2 px-5 text-sm md:text-lg font-semibold rounded-3xl 
-  bg-gradient-to-r from-blue-500 to-indigo-600 
-  overflow-hidden 
-  transition-all duration-300 
-  hover:scale-105 hover:shadow-[0_0_25px_rgba(59,130,246,0.6)]"
->
-  <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-indigo-500 opacity-0 hover:opacity-20 blur-xl transition-all duration-300"></span>
-  <span className="relative z-10">View Projects</span>
-</a>
+  <a
+    href="#Projects"
+    className="w-[200px] text-center whitespace-nowrap 
+text-white py-3 text-sm md:text-lg font-semibold rounded-full 
+bg-gradient-to-r from-blue-500 to-indigo-500 
+transition-all duration-300 
+hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.8)]"
+  >
+    View Projects
+  </a>
 
-<a
-  href="mailto:amitroy1992@gmail.com"
-  className="ml-4 relative text-white py-2 px-5 text-sm md:text-lg font-semibold rounded-3xl 
-  bg-gradient-to-r from-blue-500 to-indigo-600 
-  overflow-hidden 
-  transition-all duration-300 
-  hover:scale-105 hover:shadow-[0_0_25px_rgba(59,130,246,0.6)]"
->
-  <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-indigo-500 opacity-0 hover:opacity-20 blur-xl transition-all duration-300"></span>
-  <span className="relative z-10">Hire Me</span>
-</a>
-        </div>
+  <a
+    href="#Contact"
+    className="w-[200px] text-center whitespace-nowrap 
+text-white py-3 text-sm md:text-lg font-semibold rounded-full 
+bg-gradient-to-r from-blue-500 to-indigo-500 
+transition-all duration-300 
+hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.8)]"
+  >
+    Hire Me
+  </a>
 
-      </div>
+</div>
+</div>
 
       {/* RIGHT IMAGE (YOUR PROFILE PIC) */}
       <div className="hidden md:flex justify-center items-center">
