@@ -1,5 +1,4 @@
-import { useState, useEffect, useContext } from "react";
-import { ThemeContext } from "../Context/ThemeContext";
+import { useState, useEffect } from "react";
 
 const texts = [
   "Hi, I'm Amit Roy",
@@ -7,52 +6,40 @@ const texts = [
 ];
 
 const TextChange = () => {
-
-  const [currentText, setCurrentText] = useState("");
-  const [endValue, setEndValue] = useState(0);
-  const [isForward, setIsForward] = useState(true);
   const [index, setIndex] = useState(0);
-
-  const { theme } = useContext(ThemeContext);
+  const [subIndex, setSubIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
+    const currentText = texts[index];
 
-    const interval = setInterval(() => {
-
-      if (isForward) {
-        setEndValue((prev) => prev + 1);
+    const timeout = setTimeout(() => {
+      if (!isDeleting) {
+        // typing
+        if (subIndex < currentText.length) {
+          setSubIndex(subIndex + 1);
+        } else {
+          // pause before delete
+          setTimeout(() => setIsDeleting(true), 800);
+        }
       } else {
-        setEndValue((prev) => prev - 1);
+        // deleting
+        if (subIndex > 0) {
+          setSubIndex(subIndex - 1);
+        } else {
+          setIsDeleting(false);
+          setIndex((prev) => (prev + 1) % texts.length);
+        }
       }
+    }, isDeleting ? 40 : 80);
 
-    }, 120);
+    return () => clearTimeout(timeout);
+  }, [subIndex, isDeleting, index]);
 
-    return () => clearInterval(interval);
-
-  }, [isForward]);
-
-
-
-  useEffect(() => {
-
-    setCurrentText(texts[index].substring(0, endValue));
-
-    if (endValue === texts[index].length + 5) {
-      setIsForward(false);
-    }
-
-    if (endValue === 0) {
-      setIsForward(true);
-      setIndex((prev) => (prev + 1) % texts.length);
-    }
-
-  }, [endValue, index]);
-
-
-    return (
- <span className="text-white inline-block min-w-[650px]">
-    {currentText}
-  </span>
+  return (
+    <span className="text-white inline-block min-w-[250px] md:min-w-[650px]">
+      {texts[index].substring(0, subIndex)}
+    </span>
   );
 };
 

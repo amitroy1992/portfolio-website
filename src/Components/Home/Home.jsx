@@ -75,13 +75,13 @@ const Home = () => {
       </div>
 
       {/* RIGHT IMAGE (YOUR PROFILE PIC) */}
-      <div>
-        <img
-          src={`${import.meta.env.BASE_URL}dashboards/profile_pic.jpeg`}
-          alt="Amit Roy"
-          className="w-60 h-60 md:w-80 md:h-80 rounded-full object-cover border-4 border-blue-500 shadow-xl"
-        />
-      </div>
+      <div className="hidden md:flex justify-center items-center">
+  <img 
+    src={`${import.meta.env.BASE_URL}dashboards/profile_pic.jpeg`}
+    alt="profile"
+    className="w-64 h-64 object-cover rounded-full border-4 border-blue-500 shadow-lg"
+  />
+</div>
 
     </div>
   );

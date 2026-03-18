@@ -13,7 +13,7 @@ import Dashboards from "./Components/Dashboards/Dashboards";
 function App() {
   return (
     <ThemeProvider>
-      <div className="bg-[#171d32] dark:bg-gray-900 text-white dark:text-gray-200 h-auto w-full overflow-hidden">
+      <div className="pt-20 bg-[#171d32] dark:bg-gray-900 text-white dark:text-gray-200 h-auto w-full overflow-hidden">
         <Navbar />
         <Home />
         <Featured/>
