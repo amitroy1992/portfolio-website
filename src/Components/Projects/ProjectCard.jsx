@@ -32,9 +32,10 @@ const ProjectCard = ({ title, description, github, image }) => {
         </p>
       </div>
 
-      {/* CTA BUTTON (FIXED + SAME AS HERO & DASHBOARD) */}
       <a
-  href="#"
+  href={github}
+  target="_blank"
+  rel="noopener noreferrer"
   className="relative text-white py-2 px-5 text-sm md:text-lg font-semibold rounded-3xl 
   bg-gradient-to-r from-blue-500 to-indigo-600 
   overflow-hidden 

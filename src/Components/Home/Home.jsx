@@ -28,7 +28,7 @@ const Home = () => {
         </h1>
 
         <p className="text-sm md:text-2xl tracking-tight text-blue-400">
-          SQL | Power BI | Tableau | Excel | Data Analytics
+          SQL | Power BI | Python | Tableau | Excel | Data Analytics
         </p>
 
         <p className="text-sm md:text-lg text-gray-300 mt-4">

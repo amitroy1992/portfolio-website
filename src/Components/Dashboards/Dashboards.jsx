@@ -7,24 +7,35 @@ const dashboards = [
     description:
       "Power BI dashboard analyzing restaurant sales including revenue trends and top selling items.",
     image: "/dashboards/roys-kitchen-dashboard.png",
+    github: "https://github.com/amitroy1992/roys-kitchen-powerbi-dashboard",
   },
+  {
+    title: "Loan Approval Analysis Dashboard",
+      description:
+        "End-to-end data analytics project analyzing loan approval patterns using SQL, Python, and Power BI to derive actionable insights.",
+      image: "dashboards/loan-data-analysis-dashboard.png",
+      github: "https://github.com/amitroy1992/loan-data-analysis-dashboard",
+    },
   {
     title: "Retail Sales Power BI Dashboard",
     description:
       "Interactive Power BI dashboard analyzing retail sales across products and customer segments.",
     image: "/dashboards/retail-dashboard.png",
+    github: "https://github.com/amitroy1992/powerbi-retail-sales-dashboard",
   },
   {
     title: "Tata Data Visualization Dashboard",
     description:
       "Tableau dashboard analyzing retail sales data created during Tata simulation.",
     image: "/dashboards/tableau-dashboard.png",
+    github: "https://github.com/amitroy1992/tata-data-visualization-dashboard",
   },
   {
     title: "BCG Marketing Campaign Analysis",
     description:
       "Marketing campaign performance analysis dashboard built during BCG simulation.",
     image: "/dashboards/bcg-dashboard.png",
+    github: "https://github.com/amitroy1992/bcg-data-for-decision-makers",
   },
 ];
 
@@ -75,7 +86,9 @@ const Dashboards = () => {
             </div>
 
             <a
-  href="#"
+  href={item.github}
+  target="_blank"
+  rel="noopener noreferrer"
   className="relative text-white py-2 px-5 text-sm md:text-lg font-semibold rounded-3xl 
   bg-gradient-to-r from-blue-500 to-indigo-600 
   overflow-hidden 
@@ -84,7 +97,7 @@ const Dashboards = () => {
   w-full text-center"
 >
   <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-indigo-500 opacity-0 hover:opacity-20 blur-xl transition-all duration-300"></span>
-  <span className="relative z-10">View Dasboard</span>
+  <span className="relative z-10">View Dashboard</span>
 </a>
           </div>
         ))}

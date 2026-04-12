@@ -16,44 +16,66 @@ const Featured = () => {
         hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]"
       >
 
-        {/* IMAGE */}
         <img
           src="/dashboards/roys-kitchen-dashboard.png"
-          alt="Roy's Kitchen Dashboard"
+          alt="Roy's Kitchen Power BI Dashboard"
           className="rounded-xl w-full md:w-[40%] max-h-[280px] object-cover 
-shadow-md hover:scale-105 transition duration-300"
+          shadow-md hover:scale-105 transition duration-300"
         />
 
-        {/* CONTENT */}
         <div className="space-y-4">
 
           <h3 className="text-2xl md:text-3xl font-bold text-blue-400">
-            Roy’s Kitchen Sales Dashboard
+            Roy’s Kitchen – Zomato Sales Analytics Dashboard (Power BI)
           </h3>
 
-          <p className="text-gray-400">
-            Built an interactive Power BI dashboard analyzing restaurant sales,
-            revenue trends, and top-selling items. Helped improve business decisions
-            using real sales data.
+          <p className="text-gray-400 leading-relaxed">
+            Built an interactive Power BI dashboard to analyze restaurant sales performance,
+            focusing on revenue trends, order volume, customer ratings, and Month-over-Month (MoM) growth.
+
+            Leveraged DAX calculations and AI-driven insights to uncover business patterns and generate actionable recommendations.
+
+            <br /><br />
+            <span className="text-white font-medium">
+              Key Insight:
+            </span>{" "}
+            Revenue dropped by <span className="text-red-400 font-semibold">-9.5% in February</span>,
+            indicating the need for targeted marketing and promotional strategies.
           </p>
 
-          <ul className="text-gray-300 space-y-2">
-            <li>✔ Tools: SQL, Power BI</li>
-            <li>✔ Dataset: Real restaurant sales data</li>
-            <li>✔ Outcome: Identified top items & improved decision-making</li>
+          <ul className="text-gray-300 space-y-2 text-sm md:text-base">
+            <li>✔ Tools: Power BI, DAX</li>
+            <li>✔ Features: KPI Cards, MoM Growth, AI Insights</li>
+            <li>✔ Outcome: Data-driven decision support for business growth</li>
           </ul>
 
-          {/* CTA */}
-          <a
-            href="#Dashboards"
-            className="inline-block mt-4 px-6 py-3 rounded-full 
-            bg-gradient-to-r from-blue-500 to-indigo-500 
-            font-semibold transition-all duration-300 
-            hover:scale-105 
-            hover:shadow-[0_0_25px_rgba(59,130,246,0.6)]"
-          >
-            View Dashboard
-          </a>
+          <div className="flex gap-4 flex-wrap">
+
+            <a
+              href="#Dashboards"
+              className="px-6 py-3 rounded-full 
+              bg-gradient-to-r from-blue-500 to-indigo-500 
+              font-semibold transition-all duration-300 
+              hover:scale-105 
+              hover:shadow-[0_0_25px_rgba(59,130,246,0.6)]"
+            >
+              View Dashboard
+            </a>
+
+            <a
+              href="https://github.com/amitroy1992/roys-kitchen-powerbi-dashboard"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-full 
+              bg-gradient-to-r from-blue-500 to-indigo-500 
+              font-semibold transition-all duration-300 
+              hover:scale-105 
+              hover:shadow-[0_0_25px_rgba(59,130,246,0.6)]"
+            >
+              GitHub Repo
+            </a>
+
+          </div>
 
         </div>
       </div>

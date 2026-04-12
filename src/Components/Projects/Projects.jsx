@@ -15,6 +15,13 @@ const Projects = () => {
       image: "dashboards/roys-kitchen-dashboard.png",
     },
     {
+    title: "Loan Approval Analysis Dashboard",
+      description:
+        "End-to-end data analytics project analyzing loan approval patterns using SQL, Python, and Power BI to derive actionable insights.",
+      github: "https://github.com/amitroy1992/loan-data-analysis-dashboard",
+      image: "dashboards/loan-data-analysis-dashboard.png",
+    },
+    {
       title: "Retail Sales Power BI Dashboard",
       description:
         "Interactive Power BI dashboard analyzing retail sales performance across countries, products, and customer segments.",
