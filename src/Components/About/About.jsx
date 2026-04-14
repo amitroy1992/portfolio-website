@@ -17,102 +17,103 @@ const About = () => {
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-5xl font-bold">About Me</h2>
 
+        <p className="mt-2 text-lg font-semibold text-blue-400">
+          I turn raw data into decisions that drive revenue.
+        </p>
+
         <p
           className={`mt-3 text-md md:text-lg ${
             isDarkMode ? "text-gray-400" : "text-gray-600"
           }`}
         >
-          Data Analyst | Frontend Developer with 5 years of experience
+          Data Analyst | SQL | Power BI | Python | Business-Focused Analytics
         </p>
       </div>
 
       {/* MAIN GRID */}
-      <div className="grid md:grid-cols-2 gap-10 items-center">
+      <div className="grid md:grid-cols-2 gap-12 items-start">
 
         {/* LEFT SIDE */}
-        <div>
-          <h3 className="text-xl md:text-2xl font-bold text-blue-400 mb-4">
+        <div className="space-y-6">
+          <h3 className="text-xl md:text-2xl font-bold text-blue-400">
             Why Me?
           </h3>
 
           <ul
-            className={`space-y-3 ${
+            className={`space-y-3 text-sm md:text-base ${
               isDarkMode ? "text-gray-300" : "text-gray-700"
             }`}
           >
-            <li>✔ 5 years of industry experience</li>
-            <li>✔ Real business data analysis (Restaurant + Sales)</li>
-            <li>✔ Strong SQL + Power BI + Excel skills</li>
-            <li>✔ Ability to turn raw data into insights</li>
+            <li>✔ 5+ years of experience in data-driven and product environments</li>
+            <li>✔ Real business ownership – analysed ₹2L+ monthly revenue and 1,000+ transactions</li>
+            <li>✔ Strong in SQL, Power BI, and Python for end-to-end analytics</li>
+            <li>✔ Proven impact – improved customer retention by 15–20% using data insights</li>
+            <li>✔ Ability to translate raw data into actionable business decisions</li>
           </ul>
 
           <img
             src={AboutImg}
             alt="Data Analyst"
-            className="mt-6 rounded-xl shadow-lg 
+            className="w-full rounded-xl shadow-lg 
             hover:scale-105 transition duration-300"
           />
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="space-y-6">
+        <div className="space-y-8">
 
           {/* DATA ANALYSIS */}
-          <div className="flex gap-4">
-            <IoArrowForward size={28} className="mt-1 text-blue-400" />
+          <div className="flex gap-4 items-start">
+            <IoArrowForward size={24} className="mt-1 text-blue-400 flex-shrink-0" />
             <div>
-              <h4 className="text-xl font-bold text-blue-400">
+              <h4 className="text-lg md:text-xl font-bold text-blue-400">
                 Data Analysis
               </h4>
               <p
-                className={`${
+                className={`text-sm md:text-base ${
                   isDarkMode ? "text-gray-400" : "text-gray-600"
                 }`}
               >
-                I analyze business data using SQL, Excel, and Python to identify
-                trends, extract insights, and support data-driven decisions.
+                I analyze structured and real-world business data using SQL and Python to uncover trends, optimize performance, and support strategic decisions.
               </p>
             </div>
           </div>
 
           {/* DATA VISUALIZATION */}
-          <div className="flex gap-4">
-            <IoArrowForward size={28} className="mt-1 text-blue-400" />
+          <div className="flex gap-4 items-start">
+            <IoArrowForward size={24} className="mt-1 text-blue-400 flex-shrink-0" />
             <div>
-              <h4 className="text-xl font-bold text-blue-400">
+              <h4 className="text-lg md:text-xl font-bold text-blue-400">
                 Data Visualization
               </h4>
               <p
-                className={`${
+                className={`text-sm md:text-base ${
                   isDarkMode ? "text-gray-400" : "text-gray-600"
                 }`}
               >
-                I build interactive dashboards using Power BI and Tableau to
-                visualize business performance and key metrics.
+                I design interactive dashboards in Power BI and Tableau to track KPIs, monitor business performance, and enable data-driven decision-making.
               </p>
             </div>
           </div>
 
           {/* BUSINESS INSIGHTS */}
-          <div className="flex gap-4">
-            <IoArrowForward size={28} className="mt-1 text-blue-400" />
+          <div className="flex gap-4 items-start">
+            <IoArrowForward size={24} className="mt-1 text-blue-400 flex-shrink-0" />
             <div>
-              <h4 className="text-xl font-bold text-blue-400">
+              <h4 className="text-lg md:text-xl font-bold text-blue-400">
                 Business Insights
               </h4>
               <p
-                className={`${
+                className={`text-sm md:text-base ${
                   isDarkMode ? "text-gray-400" : "text-gray-600"
                 }`}
               >
-                I transform raw data into actionable insights to improve
-                strategy, optimize performance, and drive growth.
+                I turn insights into action — improving retention, optimizing pricing, and driving measurable business growth through data.
               </p>
             </div>
           </div>
 
         </div>
-
       </div>
     </div>
   );

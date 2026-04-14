@@ -32,7 +32,8 @@ const Home = () => {
         </p>
 
         <p className="text-sm md:text-lg text-gray-300 mt-4">
-          Helping businesses make data-driven decisions through dashboards, analytics, and insights.
+          I turn raw data into business decisions that drive revenue.  
+Improved customer retention by 15–20% using data-driven insights.
         </p>
 
         {/* BUTTONS */}
